@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8eee5">
+<title>東京親子小旅行｜2027</title>
+<style>
+:root {
+  --cream:#fffaf4; --pink:#f3d9d4; --brown:#655044;
+  --orange:#d98b64; --blue:#dcebf0; --green:#e4eadc;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0; background:var(--cream); color:var(--brown);
+  font-family:system-ui,-apple-system,"Noto Sans TC",sans-serif;
+  line-height:1.75;
+}
+header {
+  padding:48px 20px 38px; text-align:center;
+  background:linear-gradient(145deg,#f4dcd6,#f8eee1 60%,#dcebf0);
+}
+header .emoji { font-size:42px; }
+h1 { font-size:clamp(27px,6vw,42px); margin:8px 0; }
+.subtitle { margin:0; font-size:15px; }
+.wrap { max-width:900px; margin:auto; padding:20px 16px 48px; }
+nav {
+  display:flex; gap:8px; flex-wrap:wrap; justify-content:center;
+  margin:8px 0 24px;
+}
+nav a,.pill {
+  text-decoration:none; color:var(--brown); background:white;
+  border:1px solid #eadbd0; border-radius:30px;
+  padding:7px 13px; font-size:14px;
+}
+.panel,.day,.info {
+  background:white; border-radius:20px; padding:20px;
+  margin-bottom:16px; box-shadow:0 4px 18px #6d4b3210;
+}
+h2 { font-size:22px; margin:0 0 12px; }
+h3 { font-size:17px; margin:15px 0 5px; }
+.intro {
+  display:grid; grid-template-columns:repeat(3,1fr);
+  gap:10px; margin-bottom:20px;
+}
+.intro div {
+  border-radius:15px; padding:13px 8px; text-align:center;
+  background:var(--pink); font-size:14px;
+}
+.intro div:nth-child(2) { background:var(--blue); }
+.intro div:nth-child(3) { background:var(--green); }
+.day { border-left:5px solid var(--orange); }
+.day:nth-of-type(even) { border-left-color:#9bb7c1; }
+.date { color:#a76e4d; font-weight:700; font-size:13px; }
+.event {
+  display:grid; grid-template-columns:95px 1fr; gap:10px;
+  padding:10px 0; border-bottom:1px dashed #eadfd6;
+}
+.event:last-child { border-bottom:0; }
+.time { font-weight:700; font-size:14px; }
+.event p { margin:0; }
+.small { font-size:13px; color:#87776b; }
+.notice {
+  padding:13px 15px; border-radius:12px;
+  background:#fff3df; font-size:14px; margin-top:12px;
+}
+a { color:#a45e3d; overflow-wrap:anywhere; }
+.checklist label {
+  display:flex; align-items:flex-start; gap:10px;
+  padding:9px 0; border-bottom:1px solid #f2ebe5;
+}
+.checklist input { margin-top:7px; accent-color:#b67a5b; }
+.checklist input:checked + span {
+  text-decoration:line-through; color:#9b9188;
+}
+.button {
+  border:0; background:var(--brown); color:white;
+  border-radius:22px; padding:9px 15px; cursor:pointer;
+}
+footer { text-align:center; padding:24px; font-size:13px; color:#88766b; }
+@media(max-width:520px) {
+  .intro { grid-template-columns:1fr 1fr; }
+  .intro div:last-child { grid-column:1/-1; }
+  .event { grid-template-columns:78px 1fr; gap:7px; }
+  .panel,.day,.info { padding:16px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="emoji">🗼 ❄️ 🧸</div>
+  <h1>東京親子小旅行</h1>
+  <p class="subtitle">Tokyo Family Trip · 2027</p>
+  <p>2027/01/24（日）— 01/29（五）</p>
+  <p>一起逛東京、吃美食、去輕井澤玩雪！</p>
+</header>
+
+<main class="wrap">
+<nav>
+  <a href="#overview">旅行資訊</a>
+  <a href="#d1">Day 1</a><a href="#d2">Day 2</a>
+  <a href="#d3">Day 3</a><a href="#d4">Day 4</a>
+  <a href="#d5">Day 5</a><a href="#d6">Day 6</a>
+  <a href="#checklist">行李清單</a>
+</nav>
+
+<section id="overview" class="panel">
+  <h2>🌷 旅行小檔案</h2>
+  <div class="intro">
+    <div>👨‍👩‍👧‍👦<br><b>4 大 2 小</b><br>親子旅行</div>
+    <div>🗓️<br><b>6 天 5 夜</b><br>東京＋輕井澤</div>
+    <div>🏨<br><b>上野住宿</b><br>搭配輕井澤一晚</div>
+  </div>
+  <h3>✈️ 去程｜酷航 TR866</h3>
+  <p>1/24 桃園 06:50 起飛，預計 10:55 抵達成田。</p>
+  <h3>✈️ 回程｜酷航 TR875</h3>
+  <p>1/29 成田 19:45 起飛，預計 23:00 抵達桃園。</p>
+  <h3>🏨 住宿安排</h3>
+  <p>1/24、1/25、1/27、1/28：<b>上野寶石飯店 Hotel Sardonyx Ueno</b></p>
+  <p>1/26：<b>輕井澤王子大飯店 Karuizawa Prince Hotel</b></p>
+  <div class="notice">時間為規劃參考，實際航班、列車、營業時間及設施開放狀況，請於出發前再次確認。</div>
+</section>
+
+<section id="d1" class="day">
+  <div class="date">DAY 1 · 01/24（日）</div>
+  <h2>🧳 抵達東京・上野散步</h2>
+  <div class="event"><div class="time">03:50</div><p>抵達桃園機場，辦理報到。</p></div>
+  <div class="event"><div class="time">06:50</div><p>搭乘 TR866 前往成田機場。</p></div>
+  <div class="event"><div class="time">10:55</div><p>預計抵達成田，辦理入境、領行李。</p></div>
+  <div class="event"><div class="time">13:00</div><p>搭 Skyliner 前往京成上野，飯店寄放行李或辦理入住。</p></div>
+  <div class="event"><div class="time">15:00</div><p>阿美橫町散步、逛街、買零食。</p></div>
+  <div class="event"><div class="time">18:00</div><p>晚餐：<b>まいか 上野店</b>。</p></div>
+  <div class="notice">💡 第一天以休息、附近走走為主，避免安排太多景點。</div>
+</section>
+
+<section id="d2" class="day">
+  <div class="date">DAY 2 · 01/25（一）</div>
+  <h2>🐟 築地・晴空塔・淺草寺</h2>
+  <div class="event"><div class="time">09:00</div><p>築地場外市場，吃早餐、逛美食攤。</p></div>
+  <div class="event"><div class="time">10:30</div><p>前往東京晴空塔城 Solamachi。</p></div>
+  <div class="event"><div class="time">11:30</div><p>午餐：<b>敘敘苑 東京晴空塔城店</b>。</p></div>
+  <div class="event"><div class="time">13:00</div><p>逛 Solamachi；依體力選擇是否登晴空塔展望台。</p></div>
+  <div class="event"><div class="time">15:30</div><p>淺草寺、雷門、仲見世商店街。</p></div>
+  <div class="event"><div class="time">18:00</div><p>返回上野，晚餐自由安排、休息。</p></div>
+  <div class="notice">💡 敘敘苑建議提早預約 6 人座位，並確認是否有兒童椅。築地攤商營業時間各異。</div>
+</section>
+
+<section id="d3" class="day">
+  <div class="date">DAY 3 · 01/26（二）</div>
+  <h2>🚄 前往輕井澤・雪地初體驗</h2>
+  <div class="event"><div class="time">07:30</div><p>早餐、整理行李、辦理退房。</p></div>
+  <div class="event"><div class="time">09:00</div><p>預計搭乘北陸新幹線，由上野前往輕井澤。</p></div>
+  <div class="event"><div class="time">11:00</div><p>抵達後寄放行李、吃午餐。</p></div>
+  <div class="event"><div class="time">13:00</div><p>輕井澤王子滑雪場 Snowman Park：玩雪、堆雪人、雪橇活動。</p></div>
+  <div class="event"><div class="time">16:00</div><p>視體力前往輕井澤王子購物廣場。</p></div>
+  <div class="event"><div class="time">晚上</div><p>入住輕井澤王子大飯店，好好休息。</p></div>
+  <div class="notice">❄️ Snowman Park 的開放日期、雪況、雪橇及入場規定需出發前確認。新幹線班次與車票也請提早安排。</div>
+</section>
+
+<section id="d4" class="day">
+  <div class="date">DAY 4 · 01/27（三）</div>
+  <h2>⛄ 輕井澤玩雪・返回上野</h2>
+  <div class="event"><div class="time">07:30</div><p>早餐、準備保暖衣物。</p></div>
+  <div class="event"><div class="time">09:00</div><p>上午繼續玩雪、堆雪人、玩雪橇。</p></div>
+  <div class="event"><div class="time">11:00</div><p>整理行李、退房、吃午餐。</p></div>
+  <div class="event"><div class="time">13:00</div><p>預計搭北陸新幹線返回上野。</p></div>
+  <div class="event"><div class="time">15:00</div><p>回上野寶石飯店入住。</p></div>
+  <div class="event"><div class="time">17:00</div><p>上野周邊晚餐、自由活動。</p></div>
+  <div class="notice">💡 若天氣不佳，可考慮改去榆樹街小鎮（Harunire Terrace），先確認交通及營業情況。</div>
+</section>
+
+<section id="d5" class="day">
+  <div class="date">DAY 5 · 01/28（四）</div>
+  <h2>🛍️ 新宿・原宿・澀谷 Sky</h2>
+  <div class="event"><div class="time">08:00</div><p>早餐後出發。</p></div>
+  <div class="event"><div class="time">09:30</div><p>新宿逛街、購物。</p></div>
+  <div class="event"><div class="time">11:30</div><p>午餐：<b>和幸 匠庵 伊勢丹新宿店</b>。</p></div>
+  <div class="event"><div class="time">13:15</div><p>原宿竹下通，逛街、吃可麗餅；表參道視時間加逛。</p></div>
+  <div class="event"><div class="time">15:45</div><p>澀谷十字路口、忠犬八公像。</p></div>
+  <div class="event"><div class="time">16:30</div><p><b>Shibuya Sky 澀谷展望台</b>，依預約時段入場。</p></div>
+  <div class="event"><div class="time">18:30</div><p>晚餐：<b>おぼんdeごはん</b>，MIYASHITA PARK 北棟 3F。</p></div>
+  <div class="notice">🎟️ Shibuya Sky 建議事先購票：<a href="https://www.shibuya-scramble-square.com/sky/ticket/" target="_blank" rel="noopener">官方售票網站 ↗</a><br>夕陽時間及入場時段請依當日日期、票券和天氣確認。澀谷人潮多，請留意孩子。</div>
+</section>
+
+<section id="d6" class="day">
+  <div class="date">DAY 6 · 01/29（五）</div>
+  <h2>🛒 上野最後採買・回台灣</h2>
+  <div class="event"><div class="time">08:00</div><p>早餐、整理行李、確認退房事項。</p></div>
+  <div class="event"><div class="time">09:00</div><p>上野、阿美橫町最後採買。</p></div>
+  <div class="event"><div class="time">11:30</div><p>午餐。</p></div>
+  <div class="event"><div class="time">12:30</div><p>回飯店領取行李。</p></div>
+  <div class="event"><div class="time">14:00</div><p>預計搭 Skyliner 前往成田機場。</p></div>
+  <div class="event"><div class="time">15:00</div><p>預計抵達機場，辦理報到、托運與出境手續。</p></div>
+  <div class="event"><div class="time">19:45</div><p>搭乘 TR875 返回桃園，預計 23:00 抵達。</p></div>
+  <div class="notice">💡 回程列車請預留充足緩衝，並確認航廈、報到截止時間及 Skyliner 當日班次。</div>
+</section>
+
+<section class="panel">
+  <h2>🚆 交通小抄</h2>
+  <p>✈️ 成田機場 ⇄ 京成上野：Skyliner</p>
+  <p>🚄 上野 ⇄ 輕井澤：北陸新幹線</p>
+  <p>🚇 東京市區：JR 山手線、東京 Metro 等路線</p>
+  <p class="small">新幹線車次、指定席、票價及各路線時刻，請以官方最新資訊為準。</p>
+</section>
+
+<section class="panel">
+  <h2>🎒 冬季親子行李清單</h2>
+  <div id="checklist" class="checklist">
+    <label><input type="checkbox"><span>護照、機票、住宿及訂票資料</span></label>
+    <label><input type="checkbox"><span>厚外套、發熱衣、保暖褲</span></label>
+    <label><input type="checkbox"><span>防水手套、毛帽、圍巾、厚襪</span></label>
+    <label><input type="checkbox"><span>防滑防水鞋、替換鞋襪</span></label>
+    <label><input type="checkbox"><span>兒童替換衣物、尿布、濕紙巾</span></label>
+    <label><input type="checkbox"><span>孩子習慣的零食、玩具及常用藥品</span></label>
+    <label><input type="checkbox"><span>行動電源及充電線</span></label>
+    <label><input type="checkbox"><span>確認餐廳、新幹線及 Shibuya Sky 預約</span></label>
+    <label><input type="checkbox"><span>確認滑雪場／玩雪區開放及雪況</span></label>
+    <label><input type="checkbox"><span>確認航班、行李額度與機場交通</span></label>
+  </div>
+  <button class="button" onclick="resetChecks()">重設勾選</button>
+</section>
+
+<section class="panel">
+  <h2>🔋 酷航搭機提醒</h2>
+  <ul>
+    <li>行動電源應放隨身行李，不可放入託運行李。</li>
+    <li>容量、數量、機上攜帶位置及使用規定，出發前依酷航最新公告確認。</li>
+    <li>目前已知酷航對機上使用及充電行動電源設有限制，請再次核對最新規定。</li>
+    <li>隨身液體通常須符合每瓶 100 mL 等限制，並以出發機場規定為準。</li>
+    <li>起降時可讓孩子喝水或吞嚥，幫助舒緩耳壓不適。</li>
+  </ul>
+  <p><a href="https://www.flyscoot.com/zhtw/plan/booking-your-flight/baggage" target="_blank" rel="noopener">酷航行李規定 ↗</a></p>
+  <p><a href="https://www.flyscoot.com/zhtw/announcements-beta/%E6%A9%9F%E4%B8%8A%E8%A1%8C%E5%8B%95%E9%9B%BB%E6%BA%90%E4%BD%BF%E7%94%A8%E9%A0%88%E7%9F%A5" target="_blank" rel="noopener">酷航行動電源公告 ↗</a></p>
+</section>
+
+<footer>
+  <p>🌸 東京親子小旅行 · 2027 🌸</p>
+  <p>行程可依孩子體力、天氣及交通狀況彈性調整</p>
+</footer>
+</main>
+
+<script>
+function resetChecks() {
+  document.querySelectorAll('.checklist input')
+    .forEach(item => item.checked = false);
+}
+</script>
+</body>
+</html>
